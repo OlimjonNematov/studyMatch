@@ -6,9 +6,9 @@ import auth from '@react-native-firebase/auth';
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native'
 import MainNav from "./screens/mainNav"
-import HomeScreen  from "./screens/home"
+import Navigator  from "./screens/mainNav"
 
 function App (){
-  return (<MainNav/>);
+  return (<Navigator/>);
 }
 export default App;
