@@ -11,6 +11,7 @@ function MainNav(){
     return (
         <NavigationContainer>
             <Stack.Navigator>
+                {/* ##############      ADD COMPONENTS HERE     ####### */}
                 <Stack.Screen name = "home" component ={HomeScreen}/>
                 
             </Stack.Navigator>
