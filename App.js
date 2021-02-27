@@ -7,10 +7,12 @@ import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native'
 import MainNav from "./screens/mainNav"
 import HomeScreen  from "./screens/home"
+import GroupPage from './screens/GroupPage';
 
 function App (){
   return(
-   <MainNav></MainNav>
+  // <MainNav></MainNav>
+    <GroupPage/>
   );
   
 }
