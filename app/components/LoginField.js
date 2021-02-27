@@ -18,7 +18,7 @@ export default class LoginField extends Component {
                     placeholder="Password"
                     placeholderTextColor='black'
                     style={styles.textbox}
-                    secureTextEntry='true'
+                    // secureTextEntry= true
                     returnKeyType="go">
                 </TextInput>
             </View>
