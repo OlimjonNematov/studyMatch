@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "826599501394",
+    "project_id": "hackutd-c1131",
+    "storage_bucket": "hackutd-c1131.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826599501394:android:8997583b25b0a050a7798b",
+        "android_client_info": {
+          "package_name": "com.studymatch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "826599501394-trn4vap6t1kk6b6nvjj29oj4mo8mj2nn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwsVbbufD8-2EqIptr59XcZFSTw13tGJY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "826599501394-trn4vap6t1kk6b6nvjj29oj4mo8mj2nn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
