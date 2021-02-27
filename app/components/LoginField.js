@@ -1,14 +1,25 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, TextInput } from 'react-native';
 
-export default class LoginScreen extends Component {
+export default class LoginField extends Component {
     render() {
         return (
-            <View style={styles.center}>
+            <View style={styles.container}>
                 <TextInput 
-                placeholder="Username"
-                placeholderTextColor="black"
-                style={styles.textbox}>
+                    placeholder="Username"
+                    placeholderTextColor="black"
+                    style={styles.textbox}
+                    autoCapitalize='none'
+                    autoCompleteType='username'
+                    returnKeyType='next'>
+                </TextInput>
+
+                <TextInput
+                    placeholder="Password"
+                    placeholderTextColor='black'
+                    style={styles.textbox}
+                    secureTextEntry='true'
+                    returnKeyType="go">
                 </TextInput>
             </View>
         );
@@ -16,12 +27,8 @@ export default class LoginScreen extends Component {
 }
 
 const styles = StyleSheet.create({
-    center: {
-        alignItems: 'center',
-        justifyContent: 'center',
-        flex: 1,
-        padding: 20,
-        backgroundColor: "#274C77"
+    container: {
+        padding: 20
     },
     textbox: {
         height: 40,

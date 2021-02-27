@@ -1,29 +1,52 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, TextInput } from 'react-native';
+import { StyleSheet, View, TextInput, Text, TouchableOpacity, KeyboardAvoidingView } from 'react-native';
 import LoginField from '../components/LoginField';
 
 export default class LoginScreen extends Component {
     render() {
         return (
-            <View style={styles.background}>
-                <TextInput 
-                placeholder="Username"
-                placeholderTextColor="black"
-                style={styles.textbox}>
-                    
-                </TextInput>
-            </View>
+            <KeyboardAvoidingView style={styles.background}
+            behavior="padding">
+                <Text style={styles.loginText}>
+                    Login
+                </Text>
+                <LoginField/>
+
+                <TouchableOpacity style={styles.buttonContainer}>
+                    <Text style={styles.buttonText}>
+                        LOGIN
+                    </Text>
+                </TouchableOpacity>
+            </KeyboardAvoidingView>
         );
     }
 }
 
 const styles = StyleSheet.create({
     background: {
-        alignItems: 'center',
-        justifyContent: 'center',
         flex: 1,
-        padding: 20,
-        backgroundColor: "#274C77"
+        backgroundColor: "#274C77",
+        justifyContent: "center",
+        alignContent: 'center',
+        padding: 20
+    },
+    loginText: {
+        paddingBottom: 100,
+        fontWeight: 'bold',
+        fontSize: 48,
+        textAlign: 'center',
+        textAlignVertical: 'center',
+        color: 'white', 
+    },
+    buttonContainer: {
+        backgroundColor: "#2BB8E3",
+        paddingVertical: 40
+    },
+    buttonText: {
+        textAlign: 'center',
+        color: 'white',
+        fontWeight: '800',
+        fontSize: 28
     }
 }); 
 
