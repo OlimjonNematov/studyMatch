@@ -1,0 +1,12 @@
+{
+  "name": "studyMatch",
+  "displayName": "studyMatch",
+  "expo": {
+    "name": "studyMatch",
+    "slug": "studyMatch",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
